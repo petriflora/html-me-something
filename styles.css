@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body, html {
-  height: 100%;
+body {
+  background: rgba(253, 255, 183, 0.4); 
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/banner2.jpg");
-  height: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner_main.png");
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,6 +15,8 @@ body, html {
 }
 
 .hero-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -25,17 +24,96 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }
-</style>
-</head>
-<body>
-//DO I NEED THIS BELOW ON THE CSS PAGE OR ON THE HTML PAGE???
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">Doors. Elephants. Puns.</h1>
-  </div>
-</div>
 
-<p>Page Content.</p>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-</body>
-</html>
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  color: rgb(61, 60, 60);
+  text-shadow: 2px 2px 5px  rgba(179, 100, 95, 0.7);
+}
+
+p {
+  text-indent: -1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+p + p {
+  text-indent: -1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.container {
+  display: inline;
+}
+
+/* resize images */
+.container img {
+  max-height: 400px;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.cell-text {
+  width: 300px; 
+  word-wrap: break-word;
+}
+
+table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 36px;
+}
+
+#table01, #table01 tr {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px rgb(61, 60, 60);
+  border-collapse: collapse;
+}
+
+#table01 tr:nth-child(even) {
+  text-align: left;
+}
+
+#table01 tr:nth-child(odd) {
+  text-align: right;
+}
+
+hr.hr01 {
+  border-top: 1px dotted rgba(179, 100, 95, 0.3);
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 36px;
+}
